@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Aula 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+        .coluna {
+        	float:left; 
+        	margin:0; 
+        	width:33%;
+        	fon
+        }
+        .texto{
+        	font-family:verdana;
+        	text-align:center;
+        	font-weight:bolder;
+        }
+    </style>
+    <script src=""></script>
+
+</head>
+<body>
+
+	<!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+    <div class="coluna" id="column1" align="center">
+		<p class="texto">André <br> 75455</p>
+		 
+		<form style="text-align:center;" action="">
+			<input type="button" class = "texto" onclick="myFunction('Andre')" value="Fotografia">
+		</form>
+		<img id="Andre" style="visibility:hidden;" src="andre.jpg"></img>
+    </div>
+
+    <div class="coluna" id="column2" align="center">
+		<p class="texto">Daniel <br> 75629</p>
+		 
+		<form style="text-align:center;" action="">
+			<input type="button"class = "texto" onclick="myFunction('Daniel')" value="Fotografia">
+		</form>
+		<img id="Daniel" style="visibility:hidden;" src="daniel.jpg"></img>
+    </div>
+
+    <div class="coluna" id="column3" align="center">
+		<p class="texto">Leonor <br> 76031</p>
+		<form style="text-align:center;" action="">
+			<input type="button" class = "texto" onclick="myFunction('Leo')" value="Fotografia">
+		</form>
+		<img id="Leo" style="visibility:hidden;" src="leonor.jpg"></img>
+    </div>
+	
+<script>
+function myFunction(Name)
+{
+	var img = document.getElementById(Name)
+	if (img.style.visibility=='hidden') img.style.visibility="visible";
+	else img.style.visibility="hidden";
+}
+</script>
+
+</body>
+</html>
